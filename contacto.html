@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de Contacto - Script Personal</title>
+ <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+  <link href="contacto.php">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ <style>
+ body{background-image:url(4279608_640px.jpg);
+ }
+ .texto{color:orange;
+ font-size:26px;
+ margin-left:450px;
+ 
+
+ }
+ .boton{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #006505;
+    background-color: #82b085;
+    border-radius: 15px;
+    border: 3px double #006505;
+	margin-left:310px;
+  }
+  .boton:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+
+	  /*border color:green;
+	   background: #3a7999;
+ color: #f2f2f2;
+ padding: 15px;
+ font-size: 15px;
+ border-radius: 40px;
+ margin-left:180px;
+ background:#9C3032;
+ color: #3a7999;
+ box-shadow: inset 0 0 0 3px #3a7999;
+  
+
+ }*/
+ #mensaje{background:#9FECE1;
+ margin-top:70px;
+ border-color:green;}
+ #nombre{border-color:#0B08F7;
+ background:#91E36A;}
+ #email{border-color:#0B08F7;
+ background:#91E36A;}	
+  #telefono{border-color:#0B08F7;
+  background:#91E36A;} 
+   #ciudad{border-color:#0B08F7;
+   background:#91E36A;}
+    #pais{border-color:#0B08F7;
+	background:#91E36A;}
+	
+ </style>
+  
+</head>
+ 
+<body>
+  <div id="formulario">
+   <form role="form" action="php/contacto.php" method="POST" id="contacto" title="Nombre">
+   
+   <label for="nombre" class="texto">Nombre</label>
+   <input name="nombre" type="text" required="required" id="nombre" placeholder="nombre" tabindex="1" title="Nombre">
+   <br>
+     
+   <label for="email" class="texto">Email</label>
+     <input name="email" type="email" required="required" id="email" placeholder="email" tabindex="2" title="Email">
+   <br>
+   
+      <label for="telefono" class="texto">Teléfono</label>
+    <input name="telefono" type="text" id="telefono" placeholder="telefono" tabindex="3" title="Telefono">
+   <br>
+     <label for="telefono" class="texto">Ciudad</label>
+  
+   <input name="ciudad" type="text" id="ciudad" placeholder="ciudad" tabindex="4" title="ciudad">
+   <br>
+      <label for="telefono" class="texto">Pais</label> 
+  
+   <input name="pais" type="pais" id="pais" placeholder="pais" tabindex="5" title="pais">
+   <br>
+      <label for="telefono" class="texto">Mensaje</label> 
+  
+   <textarea name="mensaje" rows="4" id="mensaje" placeholder="mensaje" tabindex="6"></textarea>
+   <br><br><br>
+     
+   <input name="enviar" type="submit" class="boton" tabindex="7" value="Enviar"><input type="reset" class="boton" 
+   tabindex="8" value="Borrar">
+   <input type="hidden" name="estado" value="1">
+   </form>
+  </div>
+</body>
+</html>
+</html>
+
+
+
+
